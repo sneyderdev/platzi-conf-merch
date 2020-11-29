@@ -8,11 +8,11 @@ import Payment from '../containers/Payment';
 import Success from '../containers/Success';
 import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
-import AppProvider from '../context/AppContext';
+import { AppContextProvider } from '../context/AppContext';
 
 const App = () => {
   return (
-    <AppProvider>
+    <AppContextProvider>
       <BrowserRouter>
         <Layout>
           <Switch>
@@ -25,7 +25,7 @@ const App = () => {
           </Switch>
         </Layout>
       </BrowserRouter>
-    </AppProvider>
+    </AppContextProvider>
   );
 };
 

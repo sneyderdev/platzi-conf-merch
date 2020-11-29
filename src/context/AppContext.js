@@ -3,7 +3,7 @@ import useInitialState from '../hooks/useInitialState';
 
 const AppContext = React.createContext({});
 
-const AppProvider = ({ children }) => {
+export const AppContextProvider = ({ children }) => {
   const initialState = useInitialState();
 
   return (
@@ -11,4 +11,4 @@ const AppProvider = ({ children }) => {
   );
 };
 
-export default AppProvider;
+export default AppContext;
