@@ -43,7 +43,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
     }),
-    new webpack.EnvironmentPlugin(['PAYPAL_CLIENT_ID']),
+    new webpack.EnvironmentPlugin(['PAYPAL_CLIENT_ID', 'GOOGLE_MAPS_API_KEY']),
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
